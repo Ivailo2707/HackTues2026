@@ -10,4 +10,8 @@ public final class ApiPaths {
     public static final String AUTH_LOGIN = AUTH + "/login";
     public static final String AUTH_REFRESH = AUTH + "/refresh";
     public static final String AUTH_LOGOUT = AUTH + "/logout";
+
+    public static final String USERS = API_BASE + "/users";
+    public static final String USER_BY_ID = USERS + "/{id}";
+    public static final String ME = API_BASE + "/me";
 }

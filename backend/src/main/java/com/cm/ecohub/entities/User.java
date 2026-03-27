@@ -8,6 +8,8 @@ import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter @Setter
 @NoArgsConstructor
@@ -31,6 +33,9 @@ public class User {
 
     @Column(name = "last_name")
     private String lastName;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Village> villages = new ArrayList<>();
 
     @CreationTimestamp
     @Column(name = "created_at", updatable = false)

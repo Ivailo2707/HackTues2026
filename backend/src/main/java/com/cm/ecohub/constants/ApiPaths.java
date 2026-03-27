@@ -16,4 +16,7 @@ public final class ApiPaths {
     public static final String ME = API_BASE + "/me";
 
     public static final String AI = API_BASE + "/ai";
+
+    public static final String VILLAGES = API_BASE + "/villages";
+    public static final String VILLAGE_BY_ID = VILLAGES + "/{id}";
 }

@@ -8,4 +8,7 @@ export const API_PATHS = {
     ME: '/me',
 
     AI: '/ai',
+
+    VILLAGES: '/villages',
+    VILLAGE_BY_ID: (id) => `/villages/${id}`,
 };

@@ -1,0 +1,8 @@
+{
+  "ts": false,
+  "aliases": {
+    "hooks": "@/shared/hooks",
+    "utils": "@/utils/lib"
+  },
+  "case": "camel"
+}
